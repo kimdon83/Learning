@@ -29,5 +29,25 @@ This is better than c-style and easy to use at print function.
 ## apply()
 ``` python
 maxlen=df_result1["mtrl"].apply(len).max()
+```
 
---
+---------
+## IF you are using pandas and suffering from low speed.
+There are some solution you can try.
+
+1. Using iterrow
+```
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iterrows.html
+```
+2. Using numpy array.
+```python
+df=df.to_numpy()
+		# df.loc[index_mtrl*len(df_date):(index_mtrl+1) * len(df_date)-1, "BOseq"] = -1
+		df[index_mtrl*len(df_date):(index_mtrl+1) * len(df_date)-1, 8] = -1
+df_total=pd.DataFrame(df)
+```
+At first, change dataframe to numpy array. 
+Change df.loc[] to df[]
+Then, assign dataframe again.
+
+
