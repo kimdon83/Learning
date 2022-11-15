@@ -50,4 +50,13 @@ At first, change dataframe to numpy array.
 Change df.loc[] to df[]
 Then, assign dataframe again.
 
+## VS code - intellisence 추천이 duplicated 되었을 때 
+ctrl+ ,  :-> setting 
+
+This is related to the auto import feature (description for suggest). First suggest is auto import, second is local function (most likely). You can disable auto import by "typescript.autoImportSuggestions.enabled": false.
+
+From <https://github.com/Microsoft/vscode/issues/38306> 
+![image](https://user-images.githubusercontent.com/51689918/202035120-a60b2cad-4a0a-43ae-a1ec-9a084aa7e491.png)
+
+
 
