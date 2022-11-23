@@ -59,4 +59,4 @@ From <https://github.com/Microsoft/vscode/issues/38306>
 ![image](https://user-images.githubusercontent.com/51689918/202035120-a60b2cad-4a0a-43ae-a1ec-9a084aa7e491.png)
 
 
-
+df_new[df_new['l_ext'].isin([31, 22, 30, 25, 64])]
